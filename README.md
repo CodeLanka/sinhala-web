@@ -23,6 +23,7 @@ tags:
 
 ---
 ```
+Example;
 ```
 ---
 layout: default
@@ -38,6 +39,4 @@ tags:
 
 ##TODO
 
-- Add more sites
-- Improve design
-- Cleanup code
+See Issues ofr a list of To-Do's and help :)
