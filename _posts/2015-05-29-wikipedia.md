@@ -1,0 +1,11 @@
+---
+layout: default
+title: සිංහල විකිපීඩියා
+link: https://si.wikipedia.org/
+desc: ඕනෑම කෙනෙකුට වැඩිදියුණු කළහැකි නිදහස් විශ්‍‍වකෝෂ‍ය‍.
+categories:
+    - දැනුම 
+tags:
+    - දැනුම 
+
+---
