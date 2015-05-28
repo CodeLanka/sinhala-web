@@ -41,6 +41,9 @@ tags:
 
 See Issues ofr a list of To-Do's and help :)
 
+
+##License 
+
 The MIT License (MIT)
 
 Copyright (c) 2015 CodeLanka
