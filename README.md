@@ -39,7 +39,7 @@ tags:
 
 ##TODO
 
-See Issues ofr a list of To-Do's and help :)
+See Issues for the list of To-Do's and help :)
 
 
 ##License 
