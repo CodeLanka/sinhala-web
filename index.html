@@ -1,37 +1,50 @@
 ---
 layout: default
 ---
-    
-    
+
 {% capture index %}
 
-
 <div class="grid grid-pad">
-
 
     <div class="col-1-3 mobile-col-1-1">
 
         <h4>{{ site.desc }}</h4>
+
     </div>
 
-    <br />
-
+    <br/>
 
 </div>
 
-
-
 <div class="grid grid-pad">
+
 <div class="post">
-        {% for tag in site.categories %}
+
+  {% for tag in site.categories %}
+
     <div class="col-1-3 mobile-col-1-1">
-        <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
-        
-            {% assign pages_list = tag[1] %} {% for post in pages_list %}<ul class="post-list"> {% if post.title != null %} {% if group == null or group == post.group %}
-            <li><a href="{{ post.link }}">{{ post.title }}</a><br />{{ post.desc }}</li>
-           </ul> 
-            {% endif %} {% endif %} {% endfor %} {% assign pages_list = nil %} {% assign group = nil %}
+
+      <h2 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h2>
+
+      {% assign pages_list = tag[1] %} {% for post in pages_list %}
+
+      <ul class="post-list"> {% if post.title != null %} {% if group == null or group == post.group %}
+
+        <li class="list-item">
+          {% if post.image %}
+            <img src="{{site.baseurl}}/assets/thumbs/{{ post.image }}" class="img-thumb">
+          {% endif %}
+
+          <a href="{{ post.link }}">{{ post.title }}</a><br />{{ post.desc }}
+        </li>
+
+      </ul>
+      {% endif %} {% endif %} {% endfor %} {% assign pages_list = nil %} {% assign group = nil %}
+
     </div>
-        {% endfor %}
-    </div>
-    {% endcapture %} {{ index | markdownify }}
+
+  {% endfor %}
+
+</div>
+
+  {% endcapture %} {{ index | markdownify }}

@@ -1,11 +1,10 @@
 safe: false
 lsi: false
 permalink: "/:categories/:title"
-baseurl:               /sinhala-web
+baseurl: /sinhala-web
 
 desc :
 title: අන්තර්ජාලයේ සිංහල වෙබ් අඩවි
-
 
 paginate: 10
 
